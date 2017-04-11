@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd0ae42b-38eb-45bc-a27c-e08173c1cb50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/NewUserView.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-service/src/main/resources/application.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/foodtavern/webapp/components/Main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/foodtavern/webapp/components/Navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/foodtavern/webapp/components/food/mvp/model/FoodUseCases.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/foodtavern/webapp/components/food/mvp/presenter/FoodPresenter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/foodtavern/webapp/components/food/mvp/view/FoodView.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/foodtavern/webapp/components/serverconnection/mvp/model/ServerConnectionUseCases.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/foodtavern/webapp/components/serverconnection/mvp/presenter/ServerConnectionPresenter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/foodtavern/webapp/components/serverconnection/mvp/view/ServerConnectionView.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/FoodView.html" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/UsersView.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/ServerConnectionView.html" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/EditUserView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/web-service/web-service.iml" afterPath="$PROJECT_DIR$/.idea/modules/web-service/web-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/build.gradle" afterPath="$PROJECT_DIR$/common/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/build.gradle" afterPath="$PROJECT_DIR$/web-application/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/index.html" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-service/build.gradle" afterPath="$PROJECT_DIR$/web-service/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Main.js" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -117,8 +95,8 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="410">
+              <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -1597,12 +1575,12 @@
       <workItem from="1491923172817" duration="1122000" />
       <workItem from="1491924300487" duration="3620000" />
       <workItem from="1491934221566" duration="505000" />
-      <workItem from="1491934734304" duration="500000" />
+      <workItem from="1491934734304" duration="1450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16965000" />
+    <option name="totallyTimeSpent" value="17915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
@@ -1625,10 +1603,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30326945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30326945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24689966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24689966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34984025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1943,8 +1921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="410">
+          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="12" />
           <folding />
         </state>
       </provider>
