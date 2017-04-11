@@ -1,0 +1,1 @@
+Strive for consistency in all user interfaces, colors, number of user interactions for the same action in the web app and mobile client, etc

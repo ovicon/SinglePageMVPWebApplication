@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "68134720273",
+    "firebase_url": "https://users-a6c7a.firebaseio.com",
+    "project_id": "users-a6c7a",
+    "storage_bucket": "users-a6c7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68134720273:android:8159205cc93adba2",
+        "android_client_info": {
+          "package_name": "ro.ovidiuconeac.users.androidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68134720273-h77et44kfhpcfbd1ss7f6pdqe89iv2ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3FIGPvfAwefQcU_5WQ5dRP8DkTG9RKDg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
