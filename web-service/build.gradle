@@ -1,14 +1,33 @@
 group 'ro.ovidiuconeac.users'
 version '1.0.0'
 
-apply plugin: 'java'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+    }
+}
 
-sourceCompatibility = 1.5
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
 
 repositories {
     mavenCentral()
 }
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    // tag::actuator[]
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    // end::actuator[]
+    compile group: 'ro.ovidiuconeac.users', name: 'common', version: '1.0.0'
+    compile group: 'ro.ovidiuconeac.users', name: 'web-application', version: '1.0.0'
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }

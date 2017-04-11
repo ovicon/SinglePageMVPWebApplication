@@ -2,8 +2,13 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="common" target="1.5" />
+      <module name="common_main" target="1.5" />
+      <module name="common_test" target="1.5" />
+      <module name="users" target="1.5" />
       <module name="users_main" target="1.5" />
       <module name="users_test" target="1.5" />
+      <module name="web-application" target="1.5" />
       <module name="web-application_main" target="1.5" />
       <module name="web-application_test" target="1.5" />
       <module name="web-service_main" target="1.5" />

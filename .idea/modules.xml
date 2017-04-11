@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/users.iml" filepath="$PROJECT_DIR$/.idea/modules/users.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/users_main.iml" filepath="$PROJECT_DIR$/.idea/modules/users_main.iml" group="users" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/users_test.iml" filepath="$PROJECT_DIR$/.idea/modules/users_test.iml" group="users" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-application/web-application.iml" filepath="$PROJECT_DIR$/.idea/modules/web-application/web-application.iml" group="web-application" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-application/web-application_main.iml" filepath="$PROJECT_DIR$/.idea/modules/web-application/web-application_main.iml" group="web-application" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-application/web-application_test.iml" filepath="$PROJECT_DIR$/.idea/modules/web-application/web-application_test.iml" group="web-application" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-service/web-service.iml" filepath="$PROJECT_DIR$/.idea/modules/web-service/web-service.iml" group="web-service" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-service/web-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/web-service/web-service_main.iml" group="web-service" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-service/web-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/web-service/web-service_test.iml" group="web-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-application/web-application.iml" filepath="$PROJECT_DIR$/.idea/modules/web-application/web-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-service/web-service.iml" filepath="$PROJECT_DIR$/.idea/modules/web-service/web-service.iml" />
     </modules>
   </component>
 </project>

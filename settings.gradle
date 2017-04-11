@@ -1,4 +1,5 @@
 rootProject.name = 'users'
 include 'web-service'
 include 'web-application'
+include 'common'
 
