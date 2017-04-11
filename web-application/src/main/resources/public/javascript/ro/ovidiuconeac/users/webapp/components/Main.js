@@ -1,0 +1,68 @@
+/**
+ * Created by ovidiu on 4/3/17.
+ */
+
+var indexHead = $('head');
+
+// Import Users 
+var usersModel = document.createElement('script');
+usersModel.src = 'javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/model/UsersUseCases.js';
+indexHead.append(usersModel);
+var usersView = document.createElement('script');
+usersView.src = 'javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/view/UsersView.js';
+indexHead.append(usersView);
+var usersPresenter = document.createElement('script');
+usersPresenter.src = 'javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/presenter/UsersPresenter.js';
+indexHead.append(usersPresenter);
+
+// Import New User
+var newUserModel = document.createElement('script');
+newUserModel.src = 'javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/model/NewUserUseCases.js';
+indexHead.append(newUserModel);
+var newUserView = document.createElement('script');
+newUserView.src = 'javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/view/NewUserView.js';
+indexHead.append(newUserView);
+var newUserPresenter = document.createElement('script');
+newUserPresenter.src = 'javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/presenter/NewUserPresenter.js';
+indexHead.append(newUserPresenter);
+
+// Import Edit User
+var editUserModel = document.createElement('script');
+editUserModel.src = 'javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/model/EditUserUseCases.js';
+indexHead.append(editUserModel);
+var editUserView = document.createElement('script');
+editUserView.src = 'javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/view/EditUserView.js';
+indexHead.append(editUserView);
+var editUserPresenter = document.createElement('script');
+editUserPresenter.src = 'javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/presenter/EditUserPresenter.js';
+indexHead.append(editUserPresenter);
+
+// Import Navigation
+var navigation = document.createElement('script');
+navigation.src = 'javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js';
+indexHead.append(navigation);
+
+// Import Firebase
+var firebaseImport = document.createElement('script');
+firebaseImport.src = 'https://www.gstatic.com/firebasejs/3.7.5/firebase.js';
+indexHead.append(firebaseImport);
+
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyB3S8nRToIYC8NZOptcJCyye3wyjbg5mWY",
+    authDomain: "users-a6c7a.firebaseapp.com",
+    databaseURL: "https://users-a6c7a.firebaseio.com",
+    projectId: "users-a6c7a",
+    storageBucket: "users-a6c7a.appspot.com",
+    messagingSenderId: "68134720273"
+};
+firebase.initializeApp(config);
+
+function Main() {
+
+    Main.prototype.launch = function() {
+        $(function(){
+            Navigation.getInstance().showUsers();
+        });
+    }
+}

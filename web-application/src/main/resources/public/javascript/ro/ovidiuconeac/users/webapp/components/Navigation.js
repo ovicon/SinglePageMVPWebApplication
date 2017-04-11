@@ -10,12 +10,16 @@ var Navigation = (function () {
     function init() {
         return {
 
-            showFoodUI: function () {
-                $('#includedContent').load('resources/layout/FoodView.html');
+            showUsers: function () {
+                $('#includedContent').load('resources/layout/UsersView.html');
             },
 
-            showServerConnectionUI: function () {
-                $('#includedContent').load('resources/layout/ServerConnectionView.html');
+            showEditUser: function () {
+                $('#includedContent').load('resources/layout/EditUserView.html');
+            },
+
+            showNewUser: function () {
+                $('#includedContent').load('resources/layout/NewUserView.html');
             }
         };
 
