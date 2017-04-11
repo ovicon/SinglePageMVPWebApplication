@@ -65,7 +65,7 @@ function Main() {
 
     Main.prototype.launch = function() {
         $(function(){
-            Navigation.getInstance().showUsers();
+            //Navigation.getInstance().showUsers();
         });
     }
 }
