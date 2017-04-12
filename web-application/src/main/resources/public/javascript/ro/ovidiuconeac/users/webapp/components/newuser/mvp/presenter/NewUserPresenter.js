@@ -3,7 +3,11 @@
  */
 function NewUserPresenter(view) {
 
-    var model = new NewUserUseCases(this);
+    var model = new NewUserUseCases();
 
-
+    NewUserPresenter.prototype.save = function (name, age, sex) {
+        model.save(name, age, sex)
+        view.saveSuccessful();
+        view.resetUi();
+    }
 }

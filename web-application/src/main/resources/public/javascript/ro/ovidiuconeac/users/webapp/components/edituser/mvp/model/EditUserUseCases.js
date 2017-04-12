@@ -3,4 +3,18 @@
  */
 function EditUserUseCases(presenter) {
 
+    var db = firebase.database();
+
+    EditUserUseCases.prototype.update = function (id, name, age, sex) {
+        db.ref('users/' + id).set({
+            name: name,
+            age: age,
+            sex: sex
+        });
+    }
+
+    EditUserUseCases.prototype.remove = function (id) {
+        db.ref('users/' + id).set(null);
+        console.log('users/' + id);
+    }
 }

@@ -42,6 +42,11 @@ var navigation = document.createElement('script');
 navigation.src = 'javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js';
 indexHead.append(navigation);
 
+// Import Util
+var util = document.createElement('script');
+util.src = 'javascript/ro/ovidiuconeac/users/webapp/common/Util.js';
+indexHead.append(util);
+
 function Main() {
 
     Main.prototype.launch = function() {

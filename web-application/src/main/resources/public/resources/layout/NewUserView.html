@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<input class="back_button" onclick="Navigation.getInstance().showUsers()" />
+<input id="back" class="back_button" />
 <h1>New User</h1>
 <div>
     <br>
@@ -15,20 +15,20 @@
     <br>
     <div class="wrapper">
         <span class="description">Age</span>
-        <input id="age" class="input" type="text" />
+        <input type="number" id="age" class="input" type="text" />
     </div>
     <br>
     <div class="wrapper">
         <span class="description">Sex</span>
         <select id="sex" class="input">
+            <option></option>
             <option value="male">Male</option>
             <option value="female">Female</option>
         </select>
     </div>
     <br>
     <div class="wrapper">
-        <button id="cancel" class="button">Cancel</button>
-        <button id="save" class="button">Save</button>
+        <input id="save" class="save_button" />
     </div>
 </div>
 <!--Bind view implementation to layout -->

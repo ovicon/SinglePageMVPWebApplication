@@ -7,7 +7,25 @@ body {
     border: none;
     width: 60px;
     height: 60px;
-    background:url('../resources/img/back.png') no-repeat;
+    background:url('../resources/img/back_60x60.png') no-repeat;
+    color: black;
+}
+
+.save_button {
+    cursor:pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background:url('../resources/img/save_60x60.png') no-repeat;
+    color: black;
+}
+
+.remove_button {
+    cursor:pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background:url('../resources/img/remove_60x60.png') no-repeat;
     color: black;
 }
 
