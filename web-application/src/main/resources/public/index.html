@@ -13,22 +13,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Main entry point -->
     <script src="javascript/ro/ovidiuconeac/users/webapp/components/Main.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
 </head>
 <body>
 <div id="includedContent"></div>
-<!--
-
-<script type="application/javascript">
-    $(document).ready(function () {
-        new Main().launch();
-    });
-</script>
--->
-
-
-<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<!-- Initialize Firebase -->
 <script>
-    // Initialize Firebase
     var config = {
         apiKey: "AIzaSyB3S8nRToIYC8NZOptcJCyye3wyjbg5mWY",
         authDomain: "users-a6c7a.firebaseapp.com",
@@ -38,15 +29,17 @@
         messagingSenderId: "68134720273"
     };
     firebase.initializeApp(config);
-
-    firebase.database().ref('users/' + 2).set({
-        username: 'Ovidiu',
-        email: 'ovidiu.coneac@gmail.com',
-    });
-
 </script>
+<!-- Initialize Application -->
+<script>
+    $(document).ready(function () {
+        new Main().launch();
+
+        // Get a reference to the database service
+        var database = firebase.database();
 
 
-
+    });
+</script>
 </body>
 </html>

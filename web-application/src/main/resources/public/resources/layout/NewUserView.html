@@ -4,7 +4,38 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<h1>New user</h1>
-<button onclick="Navigation.getInstance().showUsers()">Users</button>
+<input class="back_button" onclick="Navigation.getInstance().showUsers()" />
+<h1>New User</h1>
+<div>
+    <br>
+    <div class="wrapper">
+        <span class="description">Name</span>
+        <input id="name" class="input" type="text" />
+    </div>
+    <br>
+    <div class="wrapper">
+        <span class="description">Age</span>
+        <input id="age" class="input" type="text" />
+    </div>
+    <br>
+    <div class="wrapper">
+        <span class="description">Sex</span>
+        <select id="sex" class="input">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <br>
+    <div class="wrapper">
+        <button id="cancel" class="button">Cancel</button>
+        <button id="save" class="button">Save</button>
+    </div>
+</div>
+<!--Bind view implementation to layout -->
+<script>
+    $(document).ready(function () {
+        new NewUserView();
+    });
+</script>
 </body>
 </html>

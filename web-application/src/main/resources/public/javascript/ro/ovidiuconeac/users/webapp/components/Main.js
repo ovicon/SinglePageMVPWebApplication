@@ -42,30 +42,11 @@ var navigation = document.createElement('script');
 navigation.src = 'javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js';
 indexHead.append(navigation);
 
-// Import Firebase
-var firebaseImport = document.createElement('script');
-firebaseImport.src = 'https://www.gstatic.com/firebasejs/3.7.5/firebase.js';
-indexHead.append(firebaseImport);
-
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyB3S8nRToIYC8NZOptcJCyye3wyjbg5mWY",
-    authDomain: "users-a6c7a.firebaseapp.com",
-    databaseURL: "https://users-a6c7a.firebaseio.com",
-    projectId: "users-a6c7a",
-    storageBucket: "users-a6c7a.appspot.com",
-    messagingSenderId: "68134720273"
-};
-firebase.initializeApp(config);
-
-// Get a reference to the database service
-var database = firebase.database();
-
 function Main() {
 
     Main.prototype.launch = function() {
-        $(function(){
-            //Navigation.getInstance().showUsers();
+        $(function() {
+            Navigation.getInstance().showUsers();
         });
     }
 }
