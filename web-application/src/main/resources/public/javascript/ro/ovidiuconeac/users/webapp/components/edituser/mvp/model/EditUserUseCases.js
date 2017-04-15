@@ -6,7 +6,8 @@ function EditUserUseCases(presenter) {
     var db = firebase.database();
 
     EditUserUseCases.prototype.update = function (id, name, age, sex) {
-        db.ref('users/' + id).set({
+        var ref =  db.ref('users/' + id);
+       ref.set({
             name: name,
             age: age,
             sex: sex

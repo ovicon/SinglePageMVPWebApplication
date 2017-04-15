@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Created by ovidiu on 3/22/17.
  */
@@ -32,19 +34,19 @@ function EditUserView() {
         EditUserView.prototype.remove('KhYh8aQ--66QlAHu8yp');
     });
 
-    var save = $('#save');
+    var save = $('#requestSaveUser');
     save.click(function () {
-        EditUserView.prototype.save();
+        EditUserView.prototype.requestSaveUser();
     });
 
     var presenter = new EditUserPresenter(this);
 
-    EditUserView.prototype.save = function (id) {
+    EditUserView.prototype.requestSaveUser = function (id) {
         var util = Util.getInstance();
         if (util.isValid(nameValue) &&
             util.isValid(ageValue) &&
             util.isValid(sexValue)) {
-            presenter.save(id, nameValue, ageValue, sexValue);
+            presenter.requestSaveUser(id, nameValue, ageValue, sexValue);
         } else {
             alert('Check Input');
         }

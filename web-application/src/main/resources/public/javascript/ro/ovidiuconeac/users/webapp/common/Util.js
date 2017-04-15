@@ -1,3 +1,4 @@
+"use strict";
 
 /**
  * Created by ovidiu on 12/04/17.
@@ -10,11 +11,27 @@ var Util = (function () {
     function init() {
         return {
 
-            isValid: function (val) {
+            isUserValid: function (user) {
+
                 var valid = false;
-                if (val != undefined && val != null && val.length != 0) {
-                    valid = true;
+
+                function isValid(val) {
+                    var valid = false;
+                    if (val != undefined && val != null && val.length != 0) {
+                        valid = true;
+                    }
+                    return valid;
                 }
+
+                if (user != undefined
+                    && user != null
+                    && isValid(user.name)
+                    && isValid(user.age)
+                    && isValid(user.sex)
+                ) {
+
+                }
+
                 return valid;
             },
         };

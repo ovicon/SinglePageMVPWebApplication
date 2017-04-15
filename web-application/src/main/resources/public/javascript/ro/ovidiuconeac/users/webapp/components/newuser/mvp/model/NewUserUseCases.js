@@ -1,14 +1,13 @@
+"use strict";
+
 /**
  * Created by ovidiu on 3/24/17.
  */
 function NewUserUseCases() {
 
-    NewUserUseCases.prototype.update = function (name, age, sex) {
+    NewUserUseCases.prototype.requestSaveUser = function (db, user) {
         // Creates a user with an unique ID
-        firebase.database().ref('users').push({
-            name: name,
-            age: age,
-            sex: sex
-        });
+        var ref = db.ref('users');
+        ref.push(user);
     }
 }

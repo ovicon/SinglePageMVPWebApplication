@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Created by ovidiu on 3/22/17.
  */
@@ -7,7 +9,7 @@ function EditUserPresenter(view) {
 
     EditUserPresenter.prototype.update = function (id, name, age, sex) {
         model.update(id, name, age, sex)
-        view.saveSuccessful();
+        view.postSaveUserSuccessful();
         view.showUsers();
     }
 
