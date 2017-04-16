@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1aafff3-1837-4147-853e-6d02023aaac7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/img/add_new_60x60.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/css/main.css" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/view/EditUserView.js" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/view/EditUserView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/view/NewUserView.js" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/view/NewUserView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/view/UsersView.js" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/view/UsersView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/EditUserView.html" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/EditUserView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/NewUserView.html" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/NewUserView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/UsersView.html" afterPath="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/UsersView.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,21 +57,31 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="EditUserView.js" pinned="false" current-in-tab="false">
+            <file leaf-file-name="EditUserView.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/view/EditUserView.js">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="140">
-                    <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="33" />
+                    <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
                     <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="NewUserView.html" pinned="false" current-in-tab="true">
+            <file leaf-file-name="NewUserView.html" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/NewUserView.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="200">
-                    <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="10" />
+                  <state relative-caret-position="180">
+                    <caret line="9" column="10" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/css/main.css">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="460">
+                    <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
                     <folding />
                   </state>
                 </provider>
@@ -187,31 +202,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UsersView.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/view/UsersView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersView.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsersView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/UsersView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+            <state relative-caret-position="37">
+              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -220,8 +215,28 @@
       <file leaf-file-name="EditUserView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/EditUserView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="220">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersView.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/view/UsersView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewUserView.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/view/NewUserView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -1163,17 +1178,19 @@
         <option value="$PROJECT_DIR$/_wiki/00_software_engineering_process/01_requirements/readme.txt" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/web-service/build.gradle" />
-        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/EditUserView.html" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/model/EditUserUseCases.js" />
         <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/model/NewUserUseCases.js" />
         <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/presenter/EditUserPresenter.js" />
-        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/view/NewUserView.js" />
         <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/presenter/NewUserPresenter.js" />
-        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/view/EditUserView.js" />
-        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/css/main.css" />
+        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js" />
+        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/NewUserView.html" />
+        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/view/NewUserView.js" />
         <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/view/UsersView.js" />
         <option value="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/UsersView.html" />
+        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/EditUserView.html" />
+        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/css/main.css" />
+        <option value="$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/view/EditUserView.js" />
       </list>
     </option>
   </component>
@@ -1493,8 +1510,92 @@
               <option name="myItemId" value="mvp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="presenter" />
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1540,7 +1641,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1698,6 +1841,9 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-application/src/main/resources/public/resources/img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web-application/src/main/resources/public/resources/img" />
     </key>
@@ -1727,7 +1873,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="users [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration default="false" name="users [install]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -1738,7 +1884,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="buildDependents" />
+            <option value="install" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -2197,7 +2343,7 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.users [buildDependents]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.users [install]" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.users [clean]" />
       <item index="3" class="java.lang.String" itemvalue="Gradle.users [build]" />
       <item index="4" class="java.lang.String" itemvalue="Gradle.users [bootRepackage]" />
@@ -2208,7 +2354,7 @@
         <item index="1" class="java.lang.String" itemvalue="Gradle.users [bootRepackage]" />
         <item index="2" class="java.lang.String" itemvalue="Gradle.users [build]" />
         <item index="3" class="java.lang.String" itemvalue="Gradle.users [clean]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.users [buildDependents]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.users [install]" />
       </list>
     </recent_temporary>
   </component>
@@ -2226,12 +2372,12 @@
       <workItem from="1492343384474" duration="2408000" />
       <workItem from="1492346564947" duration="1088000" />
       <workItem from="1492347662879" duration="1954000" />
-      <workItem from="1492349629170" duration="5991000" />
+      <workItem from="1492349629170" duration="14585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11583000" />
+    <option name="totallyTimeSpent" value="20177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2263,12 +2409,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17587373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17587373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34949267" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25825346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22204472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21352503" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1773163" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2480,14 +2626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-service/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -2528,10 +2666,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/view/NewUserView.js">
+    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/presenter/UsersPresenter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="60" column="34" lean-forward="false" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="399" column="3" lean-forward="true" selection-start-line="399" selection-start-column="3" selection-end-line="399" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -2544,14 +2698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/presenter/UsersPresenter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/model/UsersUseCases.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2560,50 +2706,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/view/EditUserView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/NewUserView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/EditUserView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/view/UsersView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="460">
+          <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/UsersView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        <state relative-caret-position="37">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/resources/layout/EditUserView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/newuser/mvp/view/NewUserView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/view/EditUserView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-application/src/main/resources/public/javascript/ro/ovidiuconeac/users/webapp/components/users/mvp/view/UsersView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -7,4 +7,13 @@ function UsersPresenter(view) {
 
     var model = new UsersUseCases(this);
 
+    UsersView.prototype.requestShowUsers = function() {
+
+    }
+
+
+    UsersView.prototype.requestEditUser = function() {
+
+    }
+
 }

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<div>
+<div class="container">
     <div class="wrapper">
-        <button onclick="Navigation.getInstance().showNewUser()">New User</button>
-        <button onclick="Navigation.getInstance().showEditUser()">Edit User</button>
+        <h1>Users</h1>
+    </div>
+    <div class="wrapper">
+        <input title="new" id="add-new-button" />
     </div>
     <div class="wrapper">
         <div class="table" id="users">
@@ -20,7 +22,7 @@
     </div>
     <br>
     <div class="wrapper">
-        <img class="loading" id="loading-users" alt="Loading Users">
+        <img src="" class="loading" id="loading-users" alt="Loading Users">
     </div>
 </div>
 <!--Bind view implementation to layout -->

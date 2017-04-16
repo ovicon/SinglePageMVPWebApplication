@@ -23,7 +23,6 @@ var Navigation = (function () {
                 $('#includedContent').load('resources/layout/NewUserView.html');
             }
         };
-
     };
 
     return {

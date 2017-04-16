@@ -1,8 +1,13 @@
 body {
     background-color: aliceblue;
+    margin: 0 auto;
 }
 
-.back_button {
+.container {
+    margin: 20px;
+}
+
+#back-button {
     cursor:pointer;
     border:none;
     width:60px;
@@ -11,7 +16,7 @@ body {
     color:black;
 }
 
-.save_button {
+#save-button {
     cursor:pointer;
     border:none;
     width:60px;
@@ -20,24 +25,52 @@ body {
     color:black;
 }
 
-.remove_button {
-    cursor:pointer;
-    border:none;
-    width:60px;
-    height:60px;
-    background:url('../resources/img/remove_60x60.png') no-repeat;
-    color:black;
+#remove-button {
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background: url('../resources/img/remove_60x60.png') no-repeat;
+    color: black;
+}
+
+#add-new-button {
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background: url('../resources/img/add_new_60x60.png') no-repeat;
+    color: black;
 }
 
 .wrapper {
 }
 
 .header {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.row {
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
 }
 
 .column {
-    float:left;
+    float: left;
     min-width: 100px;
+    max-width: 500px;
 }
 
 .description {
@@ -50,7 +83,7 @@ body {
 }
 
 .loading {
-    content:url("../resources/img/loading.gif");
-    width:30px;
-    height:30px;
+    content: url("../resources/img/loading.gif");
+    width: 30px;
+    height: 30px;
 }

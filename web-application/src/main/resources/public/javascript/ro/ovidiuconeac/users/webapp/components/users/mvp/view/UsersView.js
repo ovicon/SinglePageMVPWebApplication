@@ -3,49 +3,61 @@
 /**
  * Created by ovidiu on 3/22/17.
  */
+var user = {}
+
 function UsersView() {
 
-    var loadingUsers = $('#loading-users');
-    var users = $('#users');
-    var rows = $('.row'); // add listeners
-
     var db = firebase.database();
-    /*db.ref('/users/').once('value').then(function(snapshot) {
-        console.log(snapshot.toString());
-    });*/
+    var addNew = $('#add-new-button');
+    addNew.on('click', function () {
+        Navigation.getInstance().showNewUser()
+    });
+    var loading = $('#loading-users');
+    var users = $('#users');
+    var presenter = new UsersPresenter(this);
+
+
+
+
 
     db.ref('/users/').once('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
-
-            var childKey = childSnapshot.key;
+            var id = childSnapshot.key;
             var childData = childSnapshot.val();
-            console.log(childKey + ' ' + childData.name + ' ' + childData.age + ' ' + childData.sex);
-
-            var row = '<br>' +
-                '<div class=\"row\" id=\"' + childKey + '\"> ' +
+            var newRow = '<br>' +
+                '<div class=\"row\" id=\"' + id + '\"> ' +
                     '<div class=\"column\" id=\"name\">' + childData.name + '</div> ' +
                     '<div class=\"column\" id=\"sex\">' + childData.sex + '</div> ' +
                     '<div class=\"column\" id=\"age\">' +childData.age + '</div> ' +
                 '</div>';
-
-            users.append(row);
-
-
-
-
-
-
-
+            users.append(newRow);
         });
 
-        loadingUsers.hide();
+        $('.row').on('click', function (event) {
+            var parent = $(this);
+            var id = parent.attr('id');
+            var name = parent.find('#name').html();
+            var sex = parent.find('#sex').html();
+            var age = parent.find('#age').html();
+            user = {
+                id: id,
+                name: name,
+                age: age,
+                sex: sex
+            }
+            Navigation.getInstance().showEditUser();
+        });
+
+        loading.hide();
     });
 
-    UsersView.prototype.editUser = function(row) {
-        var name = row.find('#name');
-        var age = row.find('#age');
-        var sex = row.find('#sex');
-        alert(name + ' ' + age + ' ' + sex);
+    UsersView.prototype.requestShowUsers = function() {
+
+    }
+
+
+    UsersView.prototype.requestEditUser = function() {
+
     }
 
 }

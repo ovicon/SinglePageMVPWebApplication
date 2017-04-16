@@ -9,7 +9,7 @@ function NewUserView() {
     var nameValue = undefined;
     var ageValue = undefined;
     var sexValue = $('#sex option:selected').text();
-    var back = $('#back');
+    var back = $('#back-button');
     back.on('click', function () {
         Navigation.getInstance().showUsers()
     });
@@ -25,11 +25,7 @@ function NewUserView() {
     sex.on('change', function () {
         sexValue = $('#sex option:selected').text();
     });
-    var cancel = $('#cancel');
-    cancel.on('click', function () {
-        NewUserView.prototype.cancel();
-    });
-    var save = $('#save');
+    var save = $('#save-button');
     save.on('click', function () {
         NewUserView.prototype.requestSaveUser()
     });
