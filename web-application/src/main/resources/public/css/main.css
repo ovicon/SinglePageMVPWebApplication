@@ -4,32 +4,40 @@ body {
 
 .back_button {
     cursor:pointer;
-    border: none;
-    width: 60px;
-    height: 60px;
+    border:none;
+    width:60px;
+    height:60px;
     background:url('../resources/img/back_60x60.png') no-repeat;
-    color: black;
+    color:black;
 }
 
 .save_button {
     cursor:pointer;
-    border: none;
-    width: 60px;
-    height: 60px;
+    border:none;
+    width:60px;
+    height:60px;
     background:url('../resources/img/save_60x60.png') no-repeat;
-    color: black;
+    color:black;
 }
 
 .remove_button {
     cursor:pointer;
-    border: none;
-    width: 60px;
-    height: 60px;
+    border:none;
+    width:60px;
+    height:60px;
     background:url('../resources/img/remove_60x60.png') no-repeat;
-    color: black;
+    color:black;
 }
 
 .wrapper {
+}
+
+.header {
+}
+
+.column {
+    float:left;
+    min-width: 100px;
 }
 
 .description {
@@ -39,4 +47,10 @@ body {
 
 .input {
     width: 240px;
+}
+
+.loading {
+    content:url("../resources/img/loading.gif");
+    width:30px;
+    height:30px;
 }

@@ -4,7 +4,30 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<button onclick="Navigation.getInstance().showNewUser()">New User</button>
-<button onclick="Navigation.getInstance().showEditUser()">Edit User</button>
+<div>
+    <div class="wrapper">
+        <button onclick="Navigation.getInstance().showNewUser()">New User</button>
+        <button onclick="Navigation.getInstance().showEditUser()">Edit User</button>
+    </div>
+    <div class="wrapper">
+        <div class="table" id="users">
+            <div class="header">
+                <div class="column">Name</div>
+                <div class="column">Age</div>
+                <div class="column">Sex</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="wrapper">
+        <img class="loading" id="loading-users" alt="Loading Users">
+    </div>
+</div>
+<!--Bind view implementation to layout -->
+<script>
+    $(document).ready(function () {
+        new UsersView();
+    });
+</script>
 </body>
 </html>
