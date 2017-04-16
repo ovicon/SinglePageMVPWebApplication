@@ -5,17 +5,30 @@
  */
 function EditUserPresenter(view) {
 
-    var model = new EditUserUseCases(this);
+    var model = new EditUserUseCases();
+    var util = Util.getInstance();
 
-    EditUserPresenter.prototype.update = function (id, name, age, sex) {
-        model.update(id, name, age, sex)
-        view.postSaveUserSuccessful();
-        view.showUsers();
+    EditUserPresenter.prototype.requestUpdateUser = function (db, user) {
+        debugger;
+        if (util.isUserValid(user)) {
+            model.updateUser(db, user)
+            view.postUpdateUserSuccessful();
+            view.requestShowUsers();
+        } else {
+            view.postWrongUserInput();
+        }
+        view.requestResetUserMessage();
     }
 
-    EditUserPresenter.prototype.remove = function (id) {
-        model.remove(id)
-        view.removeSuccessful();
-        view.showUsers();
+    EditUserPresenter.prototype.requestRemoveUser = function (db, user) {
+        debugger;
+        if (util.isUserValid(user)) {
+            model.removeUser(db, user);
+            view.postRemoveUserSuccessful();
+            view.requestShowUsers();
+        } else {
+            view.postWrongUserInput();
+        }
+        view.requestResetUserMessage();
     }
 }

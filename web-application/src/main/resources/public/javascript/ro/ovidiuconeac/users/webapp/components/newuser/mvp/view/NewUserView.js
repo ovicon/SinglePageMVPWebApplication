@@ -37,6 +37,7 @@ function NewUserView() {
     var presenter = new NewUserPresenter(this);
 
     NewUserView.prototype.requestSaveUser = function () {
+        debugger;
         var user = {
             name: nameValue,
             age: ageValue,
@@ -46,27 +47,26 @@ function NewUserView() {
     }
 
     NewUserView.prototype.postSaveUserSuccessful = function () {
+        debugger;
         message.text('New user added successfully');
         message.css('color', 'green');
     }
 
-    NewUserView.prototype.postSaveUserUnsuccessful = function () {
-        message.text('New user unsuccessfully added');
-        message.css('color', 'red');
-    }
-
-    NewUserView.prototype.wrongUserInput = function () {
+    NewUserView.prototype.postWrongUserInput = function () {
+        debugger;
         message.text('Check Input');
         message.css('color', 'red');
     }
 
-    NewUserView.prototype.resetUserInterface = function () {
+    NewUserView.prototype.requestResetUserInterface = function () {
+        debugger;
         name.val('');
         age.val('');
         $('#sex').val('').change();
     }
 
-    NewUserView.prototype.resetUserMessage = function () {
+    NewUserView.prototype.requestResetUserMessage = function () {
+        debugger;
         setTimeout(function () {
             message.text('');
         }, 3000);

@@ -9,9 +9,7 @@ Functional requirements
     - Form 2 to add a new user
     - Form 3 to edit an existing user
 - Form navigation is done as a single page app
-- If you navigate from Form 2 or Form 3 to Form 1 without any changes, Form 1 must not reload data from the cloud
-- If you navigate from Form 2 or Form 3 to Form 1 and changes occurred, Form 1 must reload data from the cloud
-- add a new user with name, age, sex, image
+- add a new user with name, age, sex
 - edit an existing user
 - display a list of users
 

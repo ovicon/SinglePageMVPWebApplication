@@ -6,16 +6,17 @@
 function NewUserPresenter(view) {
 
     var model = new NewUserUseCases();
+    var util = Util.getInstance();
 
     NewUserPresenter.prototype.requestSaveUser = function (db, user) {
-        var util = Util.getInstance();
+        debugger;
         if (util.isUserValid(user)) {
-            model.requestSaveUser(db, user);
+            model.saveUser(db, user);
             view.postSaveUserSuccessful();
-            view.resetUserInterface();
+            view.requestResetUserInterface();
         } else {
-            view.wrongUserInput();
+            view.postWrongUserInput();
         }
-        view.resetUserMessage();
+        view.requestResetUserMessage();
     }
 }

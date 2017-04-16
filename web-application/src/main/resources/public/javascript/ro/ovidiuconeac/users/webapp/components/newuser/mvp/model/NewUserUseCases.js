@@ -5,7 +5,8 @@
  */
 function NewUserUseCases() {
 
-    NewUserUseCases.prototype.requestSaveUser = function (db, user) {
+    NewUserUseCases.prototype.saveUser = function (db, user) {
+        debugger;
         // Creates a user with an unique ID
         var ref = db.ref('users');
         ref.push(user);

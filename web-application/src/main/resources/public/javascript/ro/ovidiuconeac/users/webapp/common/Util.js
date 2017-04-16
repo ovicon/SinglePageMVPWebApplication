@@ -12,10 +12,11 @@ var Util = (function () {
         return {
 
             isUserValid: function (user) {
-
-                var valid = false;
+                debugger;
+                var validUser = false;
 
                 function isValid(val) {
+                    debugger;
                     var valid = false;
                     if (val != undefined && val != null && val.length != 0) {
                         valid = true;
@@ -29,10 +30,9 @@ var Util = (function () {
                     && isValid(user.age)
                     && isValid(user.sex)
                 ) {
-
+                    validUser = true;
                 }
-
-                return valid;
+                return validUser;
             },
         };
 
