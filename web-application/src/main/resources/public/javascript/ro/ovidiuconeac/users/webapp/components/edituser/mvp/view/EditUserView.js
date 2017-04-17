@@ -5,11 +5,12 @@
  */
 function EditUserView(user) {
 
+    var user = user;
+    var presenter = new EditUserPresenter(this);
     var db = firebase.database();
     var nameValue = undefined;
     var ageValue = undefined;
     var sexValue = undefined;
-
     var back = undefined;
     var name = undefined;
     var age = undefined;
@@ -17,10 +18,8 @@ function EditUserView(user) {
     var remove = undefined;
     var save = undefined;
     var message = undefined;
-    var presenter = undefined;
 
     $('#includedContent').load('resources/layout/EditUserView.html', function () {
-
         back = $('#back-button');
         back.on('click', function () {
             debugger;
@@ -52,21 +51,17 @@ function EditUserView(user) {
             debugger;
             EditUserView.prototype.requestUpdateUser();
         });
-
         message = $('#message');
-        presenter = new EditUserPresenter(_this);
     });
 
     EditUserView.prototype.requestUpdateUser = function () {
         debugger;
-        var id;
-        var user = {
-            id: id,
+        presenter.requestUpdateUser(db, {
+            id: user.id,
             name: nameValue,
             age: ageValue,
             sex: sexValue
-        }
-        presenter.requestUpdateUser(db, user);
+        });
     }
 
     EditUserView.prototype.postUpdateUserSuccessful = function () {
@@ -77,13 +72,12 @@ function EditUserView(user) {
 
     EditUserView.prototype.requestRemoveUser = function () {
         debugger;
-        var user = {
-            id: '-KhquOlnX7eQCJxrQGo3',
-            name: nameValue,
-            age: ageValue,
-            sex: sexValue
-        }
-        presenter.requestRemoveUser(db, user);
+        presenter.requestRemoveUser(db, {
+            id: user.id,
+            name: user.name,
+            age: user.age,
+            sex: user.sex
+        });
     }
 
     EditUserView.prototype.postRemoveUserSuccessful = function () {
@@ -101,6 +95,7 @@ function EditUserView(user) {
     EditUserView.prototype.requestResetUserMessage = function () {
         debugger;
         setTimeout(function () {
+            debugger
             message.text('');
         }, 3000);
     }
@@ -108,6 +103,7 @@ function EditUserView(user) {
     EditUserView.prototype.requestShowUsers = function () {
         debugger;
         setTimeout(function () {
+            debugger
             new UsersView();
         }, 3000);
     }

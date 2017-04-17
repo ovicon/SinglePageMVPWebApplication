@@ -5,56 +5,54 @@
  */
 function NewUserView() {
 
-    var _this = this;
-
+    var presenter = new NewUserPresenter(this);
     var db = firebase.database();
     var nameValue = undefined;
     var ageValue = undefined;
     var sexValue = $('#sex option:selected').text();
-
     var back = undefined;
     var name = undefined;
     var age = undefined;
     var sex = undefined;
     var save = undefined;
     var message = undefined;
-    var presenter = undefined;
 
     $('#includedContent').load('resources/layout/NewUserView.html', function () {
-
         back = $('#back-button');
-        back.click(function () {
+        back.on('click', function () {
+            debugger;
             new UsersView();
         });
         name = $('#name');
         name.on('change', function () {
+            debugger;
             nameValue = name.val();
         });
         age = $('#age');
         age.on('change', function () {
+            debugger;
             ageValue = age.val();
         });
         sex = $('#sex');
         sex.on('change', function () {
+            debugger;
             sexValue = $('#sex option:selected').text();
         });
         save = $('#save-button');
-        save.click(function () {
+        save.on('click', function () {
             debugger
             NewUserView.prototype.requestSaveUser()
         });
         message = $('#message');
-        presenter = new NewUserPresenter(_this);
     });
 
     NewUserView.prototype.requestSaveUser = function () {
         debugger;
-        var user = {
+        presenter.requestSaveUser(db, {
             name: nameValue,
             age: ageValue,
             sex: sexValue
-        }
-        presenter.requestSaveUser(db, user);
+        });
     }
 
     NewUserView.prototype.postSaveUserSuccessful = function () {
@@ -79,6 +77,7 @@ function NewUserView() {
     NewUserView.prototype.requestResetUserMessage = function () {
         debugger;
         setTimeout(function () {
+            debugger
             message.text('');
         }, 3000);
     }
