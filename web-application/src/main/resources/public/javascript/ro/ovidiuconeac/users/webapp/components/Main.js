@@ -39,11 +39,6 @@ var editUserPresenter = document.createElement('script');
 editUserPresenter.src = 'javascript/ro/ovidiuconeac/users/webapp/components/edituser/mvp/presenter/EditUserPresenter.js';
 indexHead.append(editUserPresenter);
 
-// Import Navigation
-var navigation = document.createElement('script');
-navigation.src = 'javascript/ro/ovidiuconeac/users/webapp/components/Navigation.js';
-indexHead.append(navigation);
-
 // Import Util
 var util = document.createElement('script');
 util.src = 'javascript/ro/ovidiuconeac/users/webapp/common/Util.js';
@@ -53,7 +48,8 @@ function Main() {
 
     Main.prototype.launch = function() {
         $(function() {
-            Navigation.getInstance().showUsers();
+            debugger;
+            new UsersView();
         });
     }
 }

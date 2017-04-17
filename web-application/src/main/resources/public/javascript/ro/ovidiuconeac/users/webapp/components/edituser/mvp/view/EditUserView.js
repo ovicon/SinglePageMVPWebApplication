@@ -3,41 +3,59 @@
 /**
  * Created by ovidiu on 3/22/17.
  */
-function EditUserView() {
+function EditUserView(user) {
 
     var db = firebase.database();
     var nameValue = undefined;
     var ageValue = undefined;
     var sexValue = undefined;
-    var back = $('#back-button');
-    back.on('click', function () {
-        Navigation.getInstance().showUsers();
+
+    var back = undefined;
+    var name = undefined;
+    var age = undefined;
+    var sex = undefined;
+    var remove = undefined;
+    var save = undefined;
+    var message = undefined;
+    var presenter = undefined;
+
+    $('#includedContent').load('resources/layout/EditUserView.html', function () {
+
+        back = $('#back-button');
+        back.on('click', function () {
+            debugger;
+            new UsersView();
+        });
+        name = $('#name');
+        name.on('change', function () {
+            nameValue = name.val();
+        });
+        name.val(user.name);
+        age = $('#age');
+        age.on('change', function () {
+            ageValue = age.val();
+        });
+        age.val(user.age);
+        sex = $('#sex');
+        sex.val(user.sex).change();
+        sex.on('change', function () {
+            debugger;
+            sexValue = $('#sex option:selected').text();
+        });
+        remove = $('#remove-button');
+        remove.on('click', function () {
+            debugger;
+            EditUserView.prototype.requestRemoveUser();
+        });
+        save = $('#save-button');
+        save.on('click', function () {
+            debugger;
+            EditUserView.prototype.requestUpdateUser();
+        });
+
+        message = $('#message');
+        presenter = new EditUserPresenter(_this);
     });
-    var name = $('#name');
-    name.val(user.name);
-    name.on('change', function () {
-        nameValue = name.val();
-    });
-    var age = $('#age');
-    age.val(user.age);
-    age.on('change', function () {
-        ageValue = age.val();
-    });
-    var sex = $('#sex');
-    sex.val(user.sex).change();
-    sex.on('change', function () {
-        sexValue = $('#sex option:selected').text();
-    });
-    var remove = $('#remove-button');
-    remove.on('click', function () {
-        EditUserView.prototype.requestRemoveUser();
-    });
-    var save = $('#save-button');
-    save.on('click', function () {
-        EditUserView.prototype.requestUpdateUser();
-    });
-    var message = $('#message');
-    var presenter = new EditUserPresenter(this);
 
     EditUserView.prototype.requestUpdateUser = function () {
         debugger;
@@ -90,7 +108,7 @@ function EditUserView() {
     EditUserView.prototype.requestShowUsers = function () {
         debugger;
         setTimeout(function () {
-            Navigation.getInstance().showUsers();
+            new UsersView();
         }, 3000);
     }
 }

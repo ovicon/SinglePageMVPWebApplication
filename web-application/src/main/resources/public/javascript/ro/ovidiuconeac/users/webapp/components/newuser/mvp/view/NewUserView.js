@@ -5,32 +5,47 @@
  */
 function NewUserView() {
 
+    var _this = this;
+
     var db = firebase.database();
     var nameValue = undefined;
     var ageValue = undefined;
     var sexValue = $('#sex option:selected').text();
-    var back = $('#back-button');
-    back.on('click', function () {
-        Navigation.getInstance().showUsers()
+
+    var back = undefined;
+    var name = undefined;
+    var age = undefined;
+    var sex = undefined;
+    var save = undefined;
+    var message = undefined;
+    var presenter = undefined;
+
+    $('#includedContent').load('resources/layout/NewUserView.html', function () {
+
+        back = $('#back-button');
+        back.click(function () {
+            new UsersView();
+        });
+        name = $('#name');
+        name.on('change', function () {
+            nameValue = name.val();
+        });
+        age = $('#age');
+        age.on('change', function () {
+            ageValue = age.val();
+        });
+        sex = $('#sex');
+        sex.on('change', function () {
+            sexValue = $('#sex option:selected').text();
+        });
+        save = $('#save-button');
+        save.click(function () {
+            debugger
+            NewUserView.prototype.requestSaveUser()
+        });
+        message = $('#message');
+        presenter = new NewUserPresenter(_this);
     });
-    var name = $('#name');
-    name.on('change', function () {
-        nameValue = name.val();
-    });
-    var age = $('#age');
-    age.on('change', function () {
-        ageValue = age.val();
-    });
-    var sex = $('#sex');
-    sex.on('change', function () {
-        sexValue = $('#sex option:selected').text();
-    });
-    var save = $('#save-button');
-    save.on('click', function () {
-        NewUserView.prototype.requestSaveUser()
-    });
-    var message = $('#message');
-    var presenter = new NewUserPresenter(this);
 
     NewUserView.prototype.requestSaveUser = function () {
         debugger;
