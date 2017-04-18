@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import butterknife.ButterKnife;
 import ro.ovidiuconeac.users.androidapp.R;
 import ro.ovidiuconeac.users.androidapp.components.newuser.mvp.presenter.NewUserPresenter;
 
@@ -23,6 +24,8 @@ public class NewUserViewImpl extends Fragment implements NewUserView {
         View view = inflater.inflate(R.layout.new_user_view, container, false);
 
         // Bind to view items
+
+        ButterKnife.bind(this, view);
 
         return view;
     }

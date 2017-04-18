@@ -15,9 +15,9 @@ function NewUserView() {
     var message = undefined;
 
     // Functions as a constructor
-    $('#includedContent').load('resources/layout/NewUserView.html', function () {
+    $('#includedContent').load('resources/layout/new_user_view.html', function () {
         debugger;
-        back = $('#back-button');
+        back = $('#back_button');
         back.on('click', function () {
             debugger;
             new UsersView();
@@ -25,7 +25,7 @@ function NewUserView() {
         name = $('#name');
         age = $('#age');
         sex = $('#sex');
-        save = $('#save-button');
+        save = $('#save_button');
         save.on('click', function () {
             debugger
             NewUserView.prototype.requestSaveUser()

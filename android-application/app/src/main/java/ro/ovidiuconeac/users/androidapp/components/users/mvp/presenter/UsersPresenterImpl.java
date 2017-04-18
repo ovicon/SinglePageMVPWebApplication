@@ -9,7 +9,7 @@ import ro.ovidiuconeac.users.androidapp.components.users.mvp.view.UsersView;
 
 public class UsersPresenterImpl implements UsersPresenter {
 
-    private UsersView view
+    private UsersView view;
     private UsersUseCases model;
 
     public UsersPresenterImpl(UsersView view) {

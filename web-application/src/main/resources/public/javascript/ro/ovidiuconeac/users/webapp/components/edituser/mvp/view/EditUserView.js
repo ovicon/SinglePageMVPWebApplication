@@ -15,9 +15,9 @@ function EditUserView(user) {
     var save = undefined;
     var message = undefined;
 
-    $('#includedContent').load('resources/layout/EditUserView.html', function () {
+    $('#includedContent').load('resources/layout/edit_user_view.html', function () {
         debugger;
-        back = $('#back-button');
+        back = $('#back_button');
         back.on('click', function () {
             debugger;
             new UsersView();
@@ -28,12 +28,12 @@ function EditUserView(user) {
         age.val(user.age);
         sex = $('#sex');
         sex.val(user.sex);
-        remove = $('#remove-button');
+        remove = $('#remove_button');
         remove.on('click', function () {
             debugger;
             EditUserView.prototype.requestRemoveUser();
         });
-        save = $('#save-button');
+        save = $('#save_button');
         save.on('click', function () {
             debugger;
             EditUserView.prototype.requestUpdateUser();

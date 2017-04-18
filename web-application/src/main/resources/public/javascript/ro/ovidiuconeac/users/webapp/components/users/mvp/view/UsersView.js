@@ -12,15 +12,15 @@ function UsersView() {
     var loading = undefined;
     var usersTable = undefined;
 
-    $('#includedContent').load('resources/layout/UsersView.html', function () {
+    $('#includedContent').load('resources/layout/users_view.html', function () {
         debugger;
-        addNew = $('#add-new-button');
+        addNew = $('#add_new_button');
         addNew.click(function () {
             debugger;
             new NewUserView();
         });
-        loading = $('#loading-users');
-        usersTable = $('#users-table');
+        loading = $('#loading_users');
+        usersTable = $('#users_table');
         UsersView.prototype.requestShowUsers();
     });
 

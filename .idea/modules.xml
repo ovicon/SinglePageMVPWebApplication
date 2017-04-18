@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.iml" group="common" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common_main.iml" group="common" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common_test.iml" group="common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/users.iml" filepath="$PROJECT_DIR$/.idea/modules/users.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-application/web-application.iml" filepath="$PROJECT_DIR$/.idea/modules/web-application/web-application.iml" group="web-application" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-application/web-application_main.iml" filepath="$PROJECT_DIR$/.idea/modules/web-application/web-application_main.iml" group="web-application" />
