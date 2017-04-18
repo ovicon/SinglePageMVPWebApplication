@@ -5,12 +5,8 @@
  */
 function EditUserView(user) {
 
-    var user = user;
-    var presenter = new EditUserPresenter(this);
     var db = firebase.database();
-    var nameValue = undefined;
-    var ageValue = undefined;
-    var sexValue = undefined;
+    var presenter = new EditUserPresenter(this);
     var back = undefined;
     var name = undefined;
     var age = undefined;
@@ -20,27 +16,18 @@ function EditUserView(user) {
     var message = undefined;
 
     $('#includedContent').load('resources/layout/EditUserView.html', function () {
+        debugger;
         back = $('#back-button');
         back.on('click', function () {
             debugger;
             new UsersView();
         });
         name = $('#name');
-        name.on('change', function () {
-            nameValue = name.val();
-        });
         name.val(user.name);
         age = $('#age');
-        age.on('change', function () {
-            ageValue = age.val();
-        });
         age.val(user.age);
         sex = $('#sex');
-        sex.val(user.sex).change();
-        sex.on('change', function () {
-            debugger;
-            sexValue = $('#sex option:selected').text();
-        });
+        sex.val(user.sex);
         remove = $('#remove-button');
         remove.on('click', function () {
             debugger;
@@ -58,9 +45,9 @@ function EditUserView(user) {
         debugger;
         presenter.requestUpdateUser(db, {
             id: user.id,
-            name: nameValue,
-            age: ageValue,
-            sex: sexValue
+            name: name.val(),
+            age: age.val(),
+            sex: sex.children("option").filter(":selected").text()
         });
     }
 
@@ -72,12 +59,7 @@ function EditUserView(user) {
 
     EditUserView.prototype.requestRemoveUser = function () {
         debugger;
-        presenter.requestRemoveUser(db, {
-            id: user.id,
-            name: user.name,
-            age: user.age,
-            sex: user.sex
-        });
+        presenter.requestRemoveUser(db, user);
     }
 
     EditUserView.prototype.postRemoveUserSuccessful = function () {
@@ -92,12 +74,19 @@ function EditUserView(user) {
         message.css('color', 'red');
     }
 
+    EditUserView.prototype.requestResetUserInterface = function () {
+        debugger;
+        name.val('');
+        age.val('');
+        sex.val('');
+    }
+
     EditUserView.prototype.requestResetUserMessage = function () {
         debugger;
         setTimeout(function () {
             debugger
             message.text('');
-        }, 3000);
+        }, 1500);
     }
 
     EditUserView.prototype.requestShowUsers = function () {
@@ -105,6 +94,6 @@ function EditUserView(user) {
         setTimeout(function () {
             debugger
             new UsersView();
-        }, 3000);
+        }, 250);
     }
 }

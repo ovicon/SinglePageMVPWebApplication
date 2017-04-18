@@ -16,6 +16,7 @@ function NewUserView() {
 
     // Functions as a constructor
     $('#includedContent').load('resources/layout/NewUserView.html', function () {
+        debugger;
         back = $('#back-button');
         back.on('click', function () {
             debugger;
@@ -57,7 +58,7 @@ function NewUserView() {
         debugger;
         name.val('');
         age.val('');
-        $('#sex').val('').change();
+        sex.val('').change();
     }
 
     NewUserView.prototype.requestResetUserMessage = function () {

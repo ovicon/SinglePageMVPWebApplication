@@ -6,67 +6,55 @@
 
 function UsersView() {
 
-    var _this = this;
-
     var db = firebase.database();
+    var presenter = new UsersPresenter(this);
     var addNew = undefined;
     var loading = undefined;
-    var users = undefined;
-    var presenter = undefined;
+    var usersTable = undefined;
 
     $('#includedContent').load('resources/layout/UsersView.html', function () {
-
-        db = firebase.database();
+        debugger;
         addNew = $('#add-new-button');
         addNew.click(function () {
+            debugger;
             new NewUserView();
         });
         loading = $('#loading-users');
-        users = $('#users');
-        presenter = new UsersPresenter(_this);
-
-
-
-
-
-        db.ref('/users/').once('value', function(snapshot) {
-            snapshot.forEach(function(childSnapshot) {
-                var id = childSnapshot.key;
-                var childData = childSnapshot.val();
-                var newRow = '<br>' +
-                    '<div class=\"row\" id=\"' + id + '\"> ' +
-                    '<div class=\"column\" id=\"name\">' + childData.name + '</div> ' +
-                    '<div class=\"column\" id=\"sex\">' + childData.sex + '</div> ' +
-                    '<div class=\"column\" id=\"age\">' +childData.age + '</div> ' +
-                    '</div>';
-                users.append(newRow);
-            });
-
-            $('.row').click(function () {
-                var parent = $(this);
-                var id = parent.attr('id');
-                var name = parent.find('#name').html();
-                var sex = parent.find('#sex').html();
-                var age = parent.find('#age').html();
-                var user = {
-                    id: id,
-                    name: name,
-                    age: age,
-                    sex: sex
-                }
-                debugger;
-                UsersView.prototype.requestEditUser(user);
-            });
-
-            loading.hide();
-        });
+        usersTable = $('#users-table');
+        UsersView.prototype.requestShowUsers();
     });
 
     UsersView.prototype.requestShowUsers = function() {
         debugger;
-        new UsersView();
+        presenter.requestShowUsers(db);
     }
 
+    UsersView.prototype.postShowUsers = function(users) {
+        debugger;
+        $.each(users, function (index, user) {
+            debugger;
+            var newRow = '<br>' +
+                '<div class=\"row\" id=\"' + user.id + '\"> ' +
+                '<div class=\"column\" id=\"name\">' + user.name + '</div> ' +
+                '<div class=\"column\" id=\"age\">' + user.age + '</div> ' +
+                '<div class=\"column\" id=\"sex\">' + user.sex + '</div> ' +
+                '</div>';
+            usersTable.append(newRow);
+        });
+        $('.row').click(function () {
+            debugger;
+            var parent = $(this);
+            var user = {
+                id: parent.attr('id'),
+                name: parent.find('#name').html(),
+                age: parent.find('#age').html(),
+                sex: parent.find('#sex').html()
+            }
+            debugger;
+            UsersView.prototype.requestEditUser(user);
+        });
+        loading.hide();
+    }
 
     UsersView.prototype.requestEditUser = function(user) {
         debugger;

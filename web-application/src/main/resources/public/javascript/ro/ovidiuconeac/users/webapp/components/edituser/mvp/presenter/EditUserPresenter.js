@@ -6,11 +6,10 @@
 function EditUserPresenter(view) {
 
     var model = new EditUserUseCases();
-    var util = Util.getInstance();
 
     EditUserPresenter.prototype.requestUpdateUser = function (db, user) {
         debugger;
-        if (util.isUserValid(user)) {
+        if (Util.getInstance().isUserValid(user)) {
             model.updateUser(db, user)
             view.postUpdateUserSuccessful();
             view.requestShowUsers();
@@ -22,9 +21,11 @@ function EditUserPresenter(view) {
 
     EditUserPresenter.prototype.requestRemoveUser = function (db, user) {
         debugger;
-        if (util.isUserValid(user)) {
+        if (Util.getInstance().isUserValid(user)) {
             model.removeUser(db, user);
+            view.requestResetUserInterface()
             view.postRemoveUserSuccessful();
+
             view.requestShowUsers();
         } else {
             view.postWrongUserInput();
