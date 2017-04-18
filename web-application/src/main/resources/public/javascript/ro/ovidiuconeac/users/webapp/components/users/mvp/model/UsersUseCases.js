@@ -5,7 +5,7 @@
  */
 function UsersUseCases() {
 
-    UsersUseCases.prototype.getAllUsers = function (db) {
+    UsersUseCases.prototype.getAllUsers = function (db, callback) {
         debugger;
         var users = [];
         var ref = db.ref('/users/');
@@ -22,9 +22,7 @@ function UsersUseCases() {
                     sex: childData.sex
                 });
             });
-
-            // Not a good way to do it, the model must not know about the presenter
-            UsersPresenter.prototype.postShowUsers(users);
+            callback.postShowUsers(users);
         });
     }
 }
