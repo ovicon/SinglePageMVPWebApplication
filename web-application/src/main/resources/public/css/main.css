@@ -1,6 +1,7 @@
 body {
     background-color: aliceblue;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -44,13 +45,11 @@ body {
 }
 
 .wrapper {
+    padding: 5px;
 }
 
 .header {
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 15px;
     background-color: black;
     color: white;
     overflow: hidden;
@@ -58,10 +57,7 @@ body {
 
 .row {
     cursor: pointer;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 15px;
     background-color: white;
     color: black;
     overflow: hidden;
@@ -69,8 +65,9 @@ body {
 
 .column {
     float: left;
-    min-width: 100px;
+    min-width: 200px;
     max-width: 500px;
+    width: 25%;
 }
 
 .description {
@@ -86,4 +83,15 @@ body {
     content: url("../resources/img/loading.gif");
     width: 30px;
     height: 30px;
+}
+
+.ui {
+    background-color: white;
+}
+
+.ui-row {
+    padding: 15px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
 }

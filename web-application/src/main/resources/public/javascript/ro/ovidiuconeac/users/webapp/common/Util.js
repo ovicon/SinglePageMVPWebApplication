@@ -18,14 +18,14 @@ var Util = (function () {
                 function isValid(val) {
                     debugger;
                     var valid = false;
-                    if (val != undefined && val != null && val.length != 0) {
+                    if (val !== undefined && val !== null && val.length !== 0) {
                         valid = true;
                     }
                     return valid;
                 }
 
-                if (user != undefined
-                    && user != null
+                if (user !== undefined
+                    && user !== null
                     && isValid(user.name)
                     && isValid(user.age)
                     && isValid(user.sex)
