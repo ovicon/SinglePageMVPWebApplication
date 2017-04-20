@@ -14,24 +14,26 @@ function NewUserView() {
     var save = undefined;
     var message = undefined;
 
-    // Functions as a constructor
-    $('#includedContent').load('resources/layout/new_user_view.html', function () {
+    NewUserView.prototype.onCreateView = function () {
         debugger;
-        back = $('#back_button');
-        back.on('click', function () {
+        $('#includedContent').load('resources/layout/new_user_view.html', function () {
             debugger;
-            new UsersView();
+            back = $('#back_button');
+            back.on('click', function () {
+                debugger;
+                new UsersView();
+            });
+            name = $('#name');
+            age = $('#age');
+            sex = $('#sex');
+            save = $('#save_button');
+            save.on('click', function () {
+                debugger
+                NewUserView.prototype.requestSaveUser()
+            });
+            message = $('#message');
         });
-        name = $('#name');
-        age = $('#age');
-        sex = $('#sex');
-        save = $('#save_button');
-        save.on('click', function () {
-            debugger
-            NewUserView.prototype.requestSaveUser()
-        });
-        message = $('#message');
-    });
+    }();
 
     NewUserView.prototype.requestSaveUser = function () {
         debugger;

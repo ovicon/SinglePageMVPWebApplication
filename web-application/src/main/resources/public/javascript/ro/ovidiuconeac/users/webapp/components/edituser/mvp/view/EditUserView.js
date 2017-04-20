@@ -15,31 +15,34 @@ function EditUserView(user) {
     var save = undefined;
     var message = undefined;
 
-    $('#includedContent').load('resources/layout/edit_user_view.html', function () {
+    EditUserView.prototype.onCreateView = function () {
         debugger;
-        back = $('#back_button');
-        back.on('click', function () {
+        $('#includedContent').load('resources/layout/edit_user_view.html', function () {
             debugger;
-            new UsersView();
+            back = $('#back_button');
+            back.on('click', function () {
+                debugger;
+                new UsersView();
+            });
+            name = $('#name');
+            name.val(user.name);
+            age = $('#age');
+            age.val(user.age);
+            sex = $('#sex');
+            sex.val(user.sex);
+            remove = $('#remove_button');
+            remove.on('click', function () {
+                debugger;
+                EditUserView.prototype.requestRemoveUser();
+            });
+            save = $('#save_button');
+            save.on('click', function () {
+                debugger;
+                EditUserView.prototype.requestUpdateUser();
+            });
+            message = $('#message');
         });
-        name = $('#name');
-        name.val(user.name);
-        age = $('#age');
-        age.val(user.age);
-        sex = $('#sex');
-        sex.val(user.sex);
-        remove = $('#remove_button');
-        remove.on('click', function () {
-            debugger;
-            EditUserView.prototype.requestRemoveUser();
-        });
-        save = $('#save_button');
-        save.on('click', function () {
-            debugger;
-            EditUserView.prototype.requestUpdateUser();
-        });
-        message = $('#message');
-    });
+    }();
 
     EditUserView.prototype.requestUpdateUser = function () {
         debugger;

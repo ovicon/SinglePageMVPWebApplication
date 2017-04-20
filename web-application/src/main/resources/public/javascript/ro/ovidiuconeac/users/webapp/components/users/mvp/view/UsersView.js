@@ -12,17 +12,20 @@ function UsersView() {
     var loading = undefined;
     var usersTable = undefined;
 
-    $('#includedContent').load('resources/layout/users_view.html', function () {
+    UsersView.prototype.onCreateView = function () {
         debugger;
-        addNew = $('#add_new_button');
-        addNew.click(function () {
+        $('#includedContent').load('resources/layout/users_view.html', function () {
             debugger;
-            new NewUserView();
+            addNew = $('#add_new_button');
+            addNew.click(function () {
+                debugger;
+                new NewUserView();
+            });
+            loading = $('#loading_users');
+            usersTable = $('#users_table');
+            UsersView.prototype.requestShowUsers();
         });
-        loading = $('#loading_users');
-        usersTable = $('#users_table');
-        UsersView.prototype.requestShowUsers();
-    });
+    }();
 
     UsersView.prototype.requestShowUsers = function() {
         debugger;

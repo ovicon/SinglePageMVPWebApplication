@@ -8,7 +8,7 @@ body {
     margin: 20px;
 }
 
-#back-button {
+#back_button {
     cursor:pointer;
     border:none;
     width:60px;
@@ -17,7 +17,7 @@ body {
     color:black;
 }
 
-#save-button {
+#save_button {
     cursor:pointer;
     border:none;
     width:60px;
@@ -26,7 +26,7 @@ body {
     color:black;
 }
 
-#remove-button {
+#remove_button {
     cursor: pointer;
     border: none;
     width: 60px;
@@ -35,7 +35,7 @@ body {
     color: black;
 }
 
-#add-new-button {
+#add_new_button {
     cursor: pointer;
     border: none;
     width: 60px;
