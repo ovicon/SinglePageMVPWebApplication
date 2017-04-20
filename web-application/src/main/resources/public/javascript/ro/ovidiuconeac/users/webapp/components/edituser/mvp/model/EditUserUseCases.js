@@ -5,6 +5,8 @@
  */
 function EditUserUseCases() {
 
+    debugger;
+
     EditUserUseCases.prototype.updateUser = function (db, user) {
         debugger;
         var ref = db.ref('users/' + user.id);

@@ -5,6 +5,8 @@
  */
 function NewUserUseCases() {
 
+    debugger;
+
     NewUserUseCases.prototype.saveUser = function (db, user) {
         debugger;
         // Creates a user with an unique ID

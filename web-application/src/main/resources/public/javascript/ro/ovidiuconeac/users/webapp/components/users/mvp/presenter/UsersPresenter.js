@@ -5,13 +5,14 @@
  */
 function UsersPresenter(view) {
 
+    debugger;
+
     var model = new UsersUseCases();
     var callback = this;
 
     UsersPresenter.prototype.requestShowUsers = function(db) {
         debugger;
         model.getAllUsers(db, callback);
-        view.postShowUsers(users);
     }
 
     UsersPresenter.prototype.postShowUsers = function(users) {

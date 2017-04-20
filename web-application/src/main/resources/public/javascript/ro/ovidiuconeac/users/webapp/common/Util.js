@@ -5,6 +5,8 @@
  */
 var Util = (function () {
 
+    debugger;
+
     // Instance stores a reference to the Singleton
     var instance;
 

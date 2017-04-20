@@ -46,10 +46,10 @@ indexHead.append(util);
 
 function Main() {
 
-    Main.prototype.launch = function() {
-        $(function() {
-            debugger;
-            new UsersView();
-        });
-    }
+    debugger;
+
+    Main.prototype.onCreateApplication = function() {
+        debugger;
+        new UsersView();
+    }();
 }

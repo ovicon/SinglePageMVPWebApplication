@@ -5,6 +5,8 @@
  */
 function NewUserView() {
 
+    debugger;
+
     var db = firebase.database();
     var presenter = new NewUserPresenter(this);
     var back = undefined;

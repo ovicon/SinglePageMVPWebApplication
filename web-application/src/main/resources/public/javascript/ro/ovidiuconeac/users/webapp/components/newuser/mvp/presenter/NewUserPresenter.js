@@ -5,6 +5,8 @@
  */
 function NewUserPresenter(view) {
 
+    debugger;
+
     var model = new NewUserUseCases();
 
     NewUserPresenter.prototype.requestSaveUser = function (db, user) {

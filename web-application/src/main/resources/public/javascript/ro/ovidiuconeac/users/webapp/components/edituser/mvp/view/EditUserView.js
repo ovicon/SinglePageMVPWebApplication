@@ -5,6 +5,8 @@
  */
 function EditUserView(user) {
 
+    debugger;
+
     var db = firebase.database();
     var presenter = new EditUserPresenter(this);
     var back = undefined;

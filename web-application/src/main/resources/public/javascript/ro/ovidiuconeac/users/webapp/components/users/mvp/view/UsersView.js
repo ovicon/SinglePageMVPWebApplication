@@ -6,6 +6,8 @@
 
 function UsersView() {
 
+    debugger;
+
     var db = firebase.database();
     var presenter = new UsersPresenter(this);
     var addNew = undefined;

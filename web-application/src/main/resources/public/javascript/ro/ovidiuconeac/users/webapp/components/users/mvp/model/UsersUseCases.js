@@ -5,6 +5,8 @@
  */
 function UsersUseCases() {
 
+    debugger;
+
     UsersUseCases.prototype.getAllUsers = function (db, callback) {
         debugger;
         var users = [];

@@ -5,6 +5,8 @@
  */
 function EditUserPresenter(view) {
 
+    debugger;
+
     var model = new EditUserUseCases();
 
     EditUserPresenter.prototype.requestUpdateUser = function (db, user) {
