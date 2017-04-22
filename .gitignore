@@ -109,3 +109,9 @@ buildNumber.properties
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 
+.idea/inspectionProfiles/
+.idea/modules/common/
+_wiki/00_software_engineering_process/03_architecture/
+_wiki/01_resources/01_fonts/
+android-application/app/libs/
+android-application/app/src/main/res/drawable/
