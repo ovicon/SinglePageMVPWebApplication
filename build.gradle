@@ -8,13 +8,4 @@ allprojects {
         mavenCentral()
         mavenLocal()
     }
-
-    /*
-    * Run this task to refresh the application before
-    * a Spring Boot deployment.
-    */
-    task refresh {
-        dependsOn 'clean'
-        dependsOn 'build'
-    }
 }

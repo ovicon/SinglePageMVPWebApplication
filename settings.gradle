@@ -1,5 +1,3 @@
-rootProject.name = 'users'
+rootProject.name = 'SinglePageMVPWebApplication'
 include 'web-service'
-include 'web-application'
-include 'common'
 
